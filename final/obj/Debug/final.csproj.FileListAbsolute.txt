@@ -9,3 +9,14 @@ C:\Users\or836\Desktop\final\obj\Debug\final.csproj.CoreCompileInputs.cache
 C:\Users\or836\Desktop\final\obj\Debug\final.exe
 C:\Users\or836\Desktop\final\obj\Debug\final.pdb
 C:\Users\or836\Desktop\final\obj\Debug\final.Form1.resources
+C:\Users\or836\Desktop\final2\final\bin\Debug\final.exe.config
+C:\Users\or836\Desktop\final2\final\bin\Debug\final.exe
+C:\Users\or836\Desktop\final2\final\bin\Debug\final.pdb
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.Form2.resources
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.Form1.resources
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.Properties.Resources.resources
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.csproj.GenerateResource.Cache
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.csproj.CoreCompileInputs.cache
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.exe
+C:\Users\or836\Desktop\final2\final\obj\Debug\final.pdb

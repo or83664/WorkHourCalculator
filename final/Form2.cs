@@ -34,7 +34,7 @@ namespace final
                 comboBox6.Items.Add(hour);
             }
 
-            for (int i = 1; i < 61; i++)
+            for (int i = 1; i < 60; i++)
             {
                 string min = i.ToString();
                 comboBox2.Items.Add(min);
@@ -238,25 +238,70 @@ namespace final
                 {
                     hourMorn = H8 - H1 - 1;
                     minMorn = M7 - M2 + 60;
+                    if (hourMorn<0)
+                    {
+                        MessageBox.Show("勿填入不合理的值");
+                        hourMorn = 0;
+                        minMorn = 0;
+                    }
                 }
                 else
                 {
                     hourMorn = H8 - H1;
                     minMorn = M7 - M2;
+                    if (hourMorn < 0)
+                    {
+                        MessageBox.Show("勿填入不合理的值");
+                        hourMorn = 0;
+                        minMorn = 0;
+                        comboBox1.SelectedIndex = -1;
+                        comboBox2.SelectedIndex = -1;
+                        comboBox7.SelectedIndex = -1;
+                        comboBox8.SelectedIndex = -1;
+                    }
                 }
 
                 label5.Text = hourMorn.ToString() + ":" + minMorn.ToString();
+                if (H8>H4)
+                {
+                    MessageBox.Show("哥，求你重填了");
+                    comboBox3.SelectedIndex = -1;
+                    comboBox4.SelectedIndex = -1;
+                    comboBox5.SelectedIndex = -1;
+                    comboBox6.SelectedIndex = -1;
 
+                    H4 = 0;
+                    M3 = 0;
+                    H6 = 0;
+                    M5 = 0;
+                    // Tryparse.comboBox4.Items[int -1];   
+                }
 
                 if (M5 - M3 < 0)
                 {
                     hourAft = H6 - H4 - 1;
                     minAft = M5 - M3 + 60;
+                    if (hourAft < 0)
+                    {
+                        MessageBox.Show("勿填入不合理的值");
+                        hourAft = 0;
+                        minAft = 0;
+                        comboBox3.SelectedIndex = -1;
+                        comboBox4.SelectedIndex = -1;
+                        comboBox5.SelectedIndex = -1;
+                        comboBox6.SelectedIndex = -1;
+                    }
                 }
                 else
                 {
                     hourAft = H6 - H4;
                     minAft = M5 - M3;
+                    if (hourAft < 0)
+                    {
+                        MessageBox.Show("勿填入不合理的值");
+                        hourAft = 0;
+                        minAft = 0;
+                    }
                 }
 
                 label6.Text = hourAft.ToString() + ":" + minAft.ToString();
@@ -264,6 +309,7 @@ namespace final
             else
             {
                 MessageBox.Show("勿填空值");
+                
             }
             
             if (minMorn + minAft>=60)
